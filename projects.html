@@ -520,6 +520,21 @@
     }
   }
   
+  .top-head {
+    padding-top: 50px; /* Default for laptops and larger screens */
+    color: #0d83fd;
+  }
+
+  @media (max-width: 768px) { /* Adjust padding for mobile screens */
+      .top-head {
+          padding-top: 0px;
+      }
+  }
+
+
+
+
+
   /* Listing Dropdown - Mobile */
   @media (max-width: 1199px) {
     .navmenu .listing-dropdown ul {
@@ -735,14 +750,14 @@
     <slot type="page-title"></slot>
     
     <div id="section-d2E2kyheym" class="builder-section-wrap position-relative "><section id="hero" style="
-    padding-top: 160px;
+    padding-top: 100px;
     background: linear-gradient(135deg, 
     color-mix(in srgb, var(--accent-color), transparent 95%) 50%, 
     color-mix(in srgb, var(--accent-color), transparent 98%) 25%, transparent 50%);" class="services section" data-builder="section" data-colorpreset="cp-light-background">
   
     <div class="container section-title aos-init aos-animate" data-aos="fade-up" data-builder="section-title">
     <!-- <span>Our Services<br></span> -->
-    <h2 style="padding-top: 50px; color:#0d83fd">Projects</h2>
+    <h2 class="top-head" style="color:#0d83fd">Projects</h2>
   </div><slot type="section-title"></slot>
     
     <div class="container">
